@@ -3,7 +3,7 @@
  * Plugin Name: Auto-process Orders for WooCommerce
  * Plugin URI: https://www.ruasdigital.id/wp-plugin/auto-process-orders-for-woocommerce/
  * Description: Automatically completes WooCommerce orders when customers purchase products at no cost, providing instant access without manual intervention.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: ruasdigitalid
  * Author URI: https://ruasdigital.id
  * License: GPLv2 or later

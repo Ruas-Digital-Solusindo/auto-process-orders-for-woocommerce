@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Auto-process Orders for WooCommerce 1.1.0\n"
+"Project-Id-Version: Auto-process Orders for WooCommerce 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/auto-process-orders-for-woocommerce\n"
 "Last-Translator: FULL NAME EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE LL@li.org\n"

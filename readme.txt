@@ -5,7 +5,7 @@ Tags: woocommerce, order status, automation
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 7.2
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,9 +41,13 @@ No, only orders with a total amount of 0 will be automatically marked as complet
 1. Plugin settings page for automatic order status.
 
 == Changelog ==
-= 1.1 =
+= 1.1.0 =
 * Added settings page
 * Added automatic update function for free orders
+
+= 1.1.1 =
+* fix multi language
+* added Settings on Wordpress plugin page
 
 == Upgrade Notice ==
 = 1.1 =
