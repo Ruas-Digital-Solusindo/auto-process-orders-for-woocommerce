@@ -11,31 +11,25 @@
 # Text Domain: auto-process-orders-for-woocommerce
 
 msgid "Free Products Settings"
-msgstr ""
+msgstr "Free Products Settings"
 
 msgid "Set automatic status for orders with zero total (free)"
-msgstr ""
+msgstr "Set automatic status for orders with zero total (free)"
 
 msgid "Automatic Order Status:"
-msgstr ""
+msgstr "Automatic Order Status:"
 
 msgid "Select the status to be automatically applied to free orders."
-msgstr ""
+msgstr "Select the status to be automatically applied to free orders."
 
 msgid "Settings"
-msgstr ""
+msgstr "Settings"
 
 msgid "Save Settings"
-msgstr ""
+msgstr "Save Settings"
 
 msgid "Settings saved successfully!"
-msgstr ""
+msgstr "Settings saved successfully!"
 
 msgid "Pengaturan Free Order"
-msgstr ""
-
-msgid "Free Products Settings"
-msgstr ""
-
-msgid "Select the status to be automatically applied to free orders."
-msgstr ""
+msgstr "Free Order Settings"

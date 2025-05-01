@@ -11,31 +11,25 @@
 # Text Domain: auto-process-orders-for-woocommerce
 
 msgid "Free Products Settings"
-msgstr ""
+msgstr "Pengaturan Produk Gratis"
 
 msgid "Set automatic status for orders with zero total (free)"
-msgstr ""
+msgstr "Tetapkan status otomatis untuk pesanan dengan total nol (gratis)"
 
 msgid "Automatic Order Status:"
-msgstr ""
+msgstr "Status Pesanan Otomatis:"
 
 msgid "Select the status to be automatically applied to free orders."
-msgstr ""
+msgstr "Pilih status yang akan diterapkan secara otomatis pada pesanan gratis."
 
 msgid "Settings"
-msgstr ""
+msgstr "Pengaturan"
 
 msgid "Save Settings"
-msgstr ""
+msgstr "Simpan Pengaturan"
 
 msgid "Settings saved successfully!"
-msgstr ""
+msgstr "Pengaturan berhasil disimpan!"
 
 msgid "Pengaturan Free Order"
-msgstr ""
-
-msgid "Free Products Settings"
-msgstr ""
-
-msgid "Select the status to be automatically applied to free orders."
-msgstr ""
+msgstr "Pengaturan Pesanan Gratis"

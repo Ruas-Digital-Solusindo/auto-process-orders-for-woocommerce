@@ -16,12 +16,18 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Prevent direct access
 }
 
+// Memuat file terjemahan
+function ruas_load_plugin_textdomain() {
+    load_plugin_textdomain( 'auto-process-orders-for-woocommerce', false, basename( dirname( __FILE__ ) ) . '/languages' );
+}
+add_action( 'plugins_loaded', 'ruas_load_plugin_textdomain' );
+
 // 1️⃣ Tambahkan menu di WooCommerce
 add_action('admin_menu', 'ruas_add_free_order_settings_menu');
 function ruas_add_free_order_settings_menu() {
     add_submenu_page(
         'woocommerce',
-        'Pengaturan Free Order',
+        'Settings Free Order',
         'Free Products Settings',
         'manage_options',
         'ruas-free-order-settings',
@@ -64,7 +70,7 @@ function ruas_free_order_settings_page() {
                 <?php wp_nonce_field('ruas_free_order_settings', 'ruas_settings_nonce'); ?>
                 <table class="form-table">
                     <tr>
-                        <th><label for="ruas_free_order_status">Status Pesanan Otomatis:</label></th>
+                        <th><label for="ruas_free_order_status">Automatic Order Status:</label></th>
                         <td>
                             <select name="ruas_free_order_status" id="ruas_free_order_status">
                                 <?php foreach ($order_statuses as $key => $label) : ?>
@@ -121,7 +127,7 @@ function ruas_enqueue_admin_scripts() {
     if ( 'toplevel_page_ruas-free-order-settings' === $screen->id ) {
         wp_enqueue_script(
             'ruas-admin-script', // Nama handle script
-            plugin_dir_url( __FILE__ ) . 'admin-script.js', // Lokasi file JS
+            plugin_dir_url( __FILE__ ) . 'js/admin-script.js', // Lokasi file JS
             array( 'jquery' ), // Ketergantungan (jQuery jika diperlukan)
             '1.0', // Versi file JS
             true // Memuat di footer
@@ -136,3 +142,11 @@ add_action( 'admin_enqueue_scripts', 'ruas_enqueue_admin_scripts' );
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
+
+// 6️⃣ Tambahkan link "Pengaturan" di halaman daftar plugin
+add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'ruas_add_settings_link_to_plugin_list');
+function ruas_add_settings_link_to_plugin_list($links) {
+    $settings_link = '<a href="' . admin_url('admin.php?page=ruas-free-order-settings') . '">' . esc_html__( 'Settings', 'auto-process-orders-for-woocommerce' ) . '</a>';
+    array_unshift($links, $settings_link); // Letakkan di posisi pertama
+    return $links;
+}
