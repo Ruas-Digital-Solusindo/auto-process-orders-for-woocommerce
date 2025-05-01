@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # auto-process-orders-for-woocommerce
+=======
+# Auto-process- Orders for Woocommerce
+Worpress plugin - Automatically completes WooCommerce orders when customers purchase products at no cost, providing instant access without manual intervention.
+>>>>>>> b1070ecd9264f6b0e0ade0b317ed7b3bdf8550f3
 
 WordPress plugin - Automatically completes WooCommerce orders when customers purchase products at no cost, providing instant access without manual intervention.
 
